@@ -15,6 +15,7 @@ export function eradicate(store: Store) {
 
 		// Don't do anything if the FB UI hasn't loaded yet
 		const feed = document.querySelector('[role=feed]');
+		//const stories = document.querySelector('[aria-label=Stories]');
 
 		if (feed == null) {
 			return;

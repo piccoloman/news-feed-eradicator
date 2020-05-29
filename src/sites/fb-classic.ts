@@ -10,9 +10,10 @@ const elementsToRemove = [
 	'.ticker_stream',
 	'.ego_column',
 	'#pagelet_gaming_destination_rhc',
-	'#stories_pagelet_rhc',
-	'#fb_stories_card_root',
-	'#stories_pagelet_below_composer',
+	//'#stories_pagelet_rhc',
+	//'#fb_stories_card_root',
+	'#video_chats',
+	//'#stories_pagelet_below_composer',
 	'#pagelet_trending_tags_and_topics',
 	'#pagelet_canvas_nav_content',
 ];
