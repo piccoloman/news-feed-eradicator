@@ -176,15 +176,10 @@ body[data-nfe-color-scheme="dark"] .nfe-quote-text {
 }
 
 /* This hides the news feed before the JS kicks in */
-/* ADDED STORIES BACK IN
-#stories_pagelet_rhc,
-#fb_stories_card_root,
-*/
 div[id^='explorefeed_main_stream'],
 div[id^='topnews_main_stream'],
 div.ticker_stream,
 div.ego_column,
-#video_chats,
 #pagelet_home_stream,
 #pagelet_trending_tags_and_topics,
 #pagelet_gaming_destination_rhc,
@@ -193,52 +188,11 @@ div.ego_column,
 	pointer-events: none !important;
 }
 
-html:not([data-nfe-enabled='false']) div[role='feed'],
-div[aria-label='Stories'] {
+/*
+div[aria-label='Stories'],
+*/
+html:not([data-nfe-enabled='false']) div[role='feed'] {
 	opacity: 0 !important;
 	pointer-events: none !important;
 	height: 0 !important;
-}
-
-/* Twitter */
-html:not([data-nfe-enabled='false']) div[data-testid="primaryColumn"] > div:last-child > div:nth-child(4) > #nfe-container {
-	padding: 16px;
-}
-
-html:not([data-nfe-enabled='false']) div[data-testid="primaryColumn"] > div:last-child > div:nth-child(4) > div:not(#nfe-container) {
-	opacity: 0 !important;
-	pointer-events: none !important;
-	height: 0 !important;
-}
-/* "What's Happening" section on Twitter */
-[data-testid="sidebarColumn"] [role="region"] {
-	opacity: 0 !important;
-	pointer-events: none !important;
-	height: 0 !important;
-}
-
-/* Reddit Home | Popular | All */
-#SHORTCUT_FOCUSABLE_DIV > :not([class^=SubredditVars-r-]) .scrollerItem,
-.SubredditVars-r-all .scrollerItem, .SubredditVars-r-popular .scrollerItem {
-	opacity: 0 !important;
-	pointer-events: none !important;
-}
-
-/* Reddit's Popular's Trending Part */
-#TrendingPostsContainer{
-	opacity: 0 !important;
-	pointer-events: none !important;
-	height: 0 !important;
-}
- 
-/* Reddit old */
-.listing-page.with-listing-chooser .content #siteTable {
-	opacity: 0 !important;
-	pointer-events: none !important;
-	height: 0 !important;
-} 
-
-/* Hacker News */
-html:not([data-nfe-enabled='false']) table#hnmain .itemlist {
-  display: none;
 }
